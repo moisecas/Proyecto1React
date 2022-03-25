@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import Contador from './components/Contador.jsx';
+import Eventos from './components/Eventos.jsx';
+import Listas from './components/Listas.jsx';
+import ListasDos from './components/ListasDos.jsx';
+import Parrafo from './components/Parrafo.jsx'; //taer los components al js que renderiza el proyecto
+import Variables from './components/Variables.jsx';
+//al tener componentes podemos usarlo las veces que queramos <Parrafo /> dentro del div de la función app 
+ 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return ( //retornamos todo nuestro html 
+    <div>
+       <h1>Hola mundo</h1> 
+       <Parrafo /> 
+       <Variables /> 
+       <Eventos />
+       <Contador />
+       <Listas />
+       <ListasDos />  
     </div>
   );
 }
