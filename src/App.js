@@ -1,6 +1,7 @@
 import React from 'react';
 import Contador from './components/Contador.jsx';
 import Eventos from './components/Eventos.jsx';
+import Formulario from './components/Formulario.jsx';
 import Listas from './components/Listas.jsx';
 import ListasDos from './components/ListasDos.jsx';
 import Parrafo from './components/Parrafo.jsx'; //taer los components al js que renderiza el proyecto
@@ -9,7 +10,7 @@ import Variables from './components/Variables.jsx';
  
 function App() {
   return ( //retornamos todo nuestro html 
-    <div>
+    <div className='container mt-5'> 
        <h1>Hola mundo</h1> 
        <Parrafo /> 
        <Variables /> 
@@ -17,6 +18,7 @@ function App() {
        <Contador />
        <Listas />
        <ListasDos />  
+       <Formulario /> 
     </div>
   );
 }

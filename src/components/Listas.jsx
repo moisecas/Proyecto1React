@@ -11,7 +11,7 @@ const Listas = () => {
         <h2>Listas</h2> 
         {
             lista.map((item, index) =>(
-                <h4 key={index}>{item}</h4>  
+                <h4 key={index}> {item}</h4>  
             ))
         }
     </div>
